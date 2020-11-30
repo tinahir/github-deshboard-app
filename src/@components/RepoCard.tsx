@@ -87,7 +87,10 @@ const RepoCard: React.FunctionComponent<Props> = ({ repo, org }) => {
           css={css({
             mb: 3,
             color: "blue.600",
+            cursor: "pointer",
           })}
+          role="button"
+          onClick={() => setShowPullRequestsModal(true)}
         >
           {repo.name}
         </h3>
