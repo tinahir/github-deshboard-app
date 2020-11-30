@@ -1,8 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import * as React from "react";
 import css from "@styled-system/css";
+import copy from "copy-to-clipboard";
+
 import { Repository } from "models/repository";
-import { HiOutlineUser, HiOutlineStar } from "react-icons/hi";
+import {
+  HiOutlineUser,
+  HiOutlineStar,
+  HiOutlineClipboardCopy,
+} from "react-icons/hi";
 import { GoGitPullRequest } from "react-icons/go";
 import moment from "moment";
 import { createSelector } from "@reduxjs/toolkit";
@@ -62,6 +68,10 @@ const RepoCard: React.FunctionComponent<Props> = ({ repo, org }) => {
   const closePullRequestsModal = React.useCallback(() => {
     setShowPullRequestsModal(false);
   }, []);
+
+  const copyCloneUrl = () => {
+    copy(repo.clone_url);
+  };
 
   return (
     <article
@@ -195,6 +205,9 @@ const RepoCard: React.FunctionComponent<Props> = ({ repo, org }) => {
         </IconButton>
         <IconButton onClick={() => setShowContributorsModal(true)}>
           <HiOutlineUser />
+        </IconButton>
+        <IconButton onClick={() => copyCloneUrl()}>
+          <HiOutlineClipboardCopy />
         </IconButton>
       </div>
     </article>
