@@ -11,7 +11,7 @@ const Layout: React.FunctionComponent<Props> = ({ children }) => {
     <div
       css={css({
         position: "relative",
-        bg: "gray.100",
+        bg: "white",
         minHeight: "100vh",
       })}
     >

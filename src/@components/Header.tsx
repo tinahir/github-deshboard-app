@@ -24,7 +24,9 @@ const Header: React.FunctionComponent = () => {
             alignItems: "center",
           })}
         >
-          <FiGithub size="40" color="blue" />
+          <Link to="/">
+            <FiGithub size="40" color="blue" />
+          </Link>
         </div>
         <div
           css={css({

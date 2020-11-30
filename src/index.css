@@ -8,6 +8,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 *,
@@ -17,4 +18,9 @@ body {
   border-width: 0;
   border-style: solid;
   border-color: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }

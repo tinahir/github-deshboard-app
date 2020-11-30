@@ -25,7 +25,7 @@ export const tokens = {
 
   lineHeights: {
     compact: "1.2",
-    default: "1.6",
+    default: "1.5",
     cosy: "2",
   },
 
