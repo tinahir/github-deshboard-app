@@ -7,8 +7,10 @@ const Header: React.FunctionComponent = () => {
   return (
     <div
       css={css({
-        px: 5,
-        pt: 5,
+        px: [2, 2, 5],
+        py: [2, 2, 3],
+        maxWidth: "1280px",
+        mx: "auto",
       })}
     >
       <nav

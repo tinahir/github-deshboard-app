@@ -8,29 +8,33 @@ type Props = {
 
 const Layout: React.FunctionComponent<Props> = ({ children }) => {
   return (
-    <div
-      css={css({
-        position: "relative",
-        bg: "white",
-        minHeight: "100vh",
-      })}
-    >
+    <>
+      <Header></Header>
+
       <div
         css={css({
-          maxWidth: "1280px",
-          mx: "auto",
+          position: "relative",
+          minHeight: "100vh",
         })}
       >
         <div
           css={css({
-            width: "100%",
+            maxWidth: "1280px",
+            mx: "auto",
           })}
         >
-          <Header></Header>
-          {children}
+          <div
+            css={css({
+              width: "100%",
+              px: [2, 3, 5],
+              py: 5,
+            })}
+          >
+            {children}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

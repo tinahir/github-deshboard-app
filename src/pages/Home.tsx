@@ -13,12 +13,7 @@ const Home: React.FunctionComponent = () => {
     setOrg(value);
   };
   return (
-    <main
-      css={css({
-        px: [2, 5],
-        mt: 9,
-      })}
-    >
+    <main>
       <div>
         <h1
           css={css({

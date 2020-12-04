@@ -51,8 +51,6 @@ const Dashboard: React.FunctionComponent = () => {
   return (
     <article
       css={css({
-        px: [2, 5],
-        my: 9,
         display: "grid",
         gap: [2, 3],
         gridTemplateColumns: [
