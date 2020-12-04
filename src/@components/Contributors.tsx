@@ -59,6 +59,8 @@ const Contributors: React.FunctionComponent<Props> = ({ repo, org }) => {
         pb: 5,
         borderColor: "transparent",
         color: "gray.900",
+        maxHeight: "100vh",
+        overflow: "auto",
       })}
     >
       <ol

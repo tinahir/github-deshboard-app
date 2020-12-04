@@ -19,6 +19,7 @@ const Button = styled.button(
     fontSize: 3,
     lineHeight: 1.5,
     cursor: "pointer",
+    ":hover, :focus": { bg: "blue.500" },
   })
 );
 

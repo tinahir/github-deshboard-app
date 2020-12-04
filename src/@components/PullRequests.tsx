@@ -128,7 +128,7 @@ const PullRequests: React.FunctionComponent<Props> = ({ repo, org }) => {
                     py: 2,
                     bg: "green.200",
                     mr: 2,
-                    borderRadius: 2,
+                    borderRadius: 4,
                     color: "green.900",
                     textTransform: "capitalize",
                   })}

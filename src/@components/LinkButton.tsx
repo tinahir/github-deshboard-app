@@ -21,6 +21,7 @@ const LinkButton = styled(Link)(
     lineHeight: 1.5,
     cursor: "pointer",
     textDecoration: "none",
+    ":hover, :focus": { bg: "blue.500" },
   })
 );
 
