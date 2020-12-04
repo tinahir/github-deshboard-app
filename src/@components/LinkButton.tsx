@@ -22,6 +22,9 @@ const LinkButton = styled(Link)(
     cursor: "pointer",
     textDecoration: "none",
     ":hover, :focus": { bg: "blue.500" },
+    ":active": {
+      transform: "scale(0.98)",
+    },
   })
 );
 

@@ -13,7 +13,7 @@ const IconButton = styled.button(
     borderRadius: "medium",
     bg: "transparent",
     color: "blue.600",
-    ":hover": {
+    ":hover, :focus": {
       color: "blue.400",
     },
     svg: {
@@ -24,6 +24,9 @@ const IconButton = styled.button(
     lineHeight: 1.5,
     cursor: "pointer",
     outline: 0,
+    ":active": {
+      transform: "scale(0.90)",
+    },
   })
 );
 
